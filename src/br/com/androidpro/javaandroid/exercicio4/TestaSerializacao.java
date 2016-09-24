@@ -14,7 +14,7 @@ public class TestaSerializacao {
             // Para Windows utilize o caminho c:\\funcionario.ser
             FileOutputStream fileOut = new FileOutputStream("/home/funcionario.ser");
             ObjectOutputStream out = new ObjectOutputStream (fileOut);
-            out.writeObject(out);
+            out.writeObject(funcionario);
             System.out.println("Serializando...");
             out.close();
             fileOut.close();
